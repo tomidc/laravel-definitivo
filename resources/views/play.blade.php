@@ -8,23 +8,27 @@
 
     <div class="">
       <div class="">
-        <h2> IMAGEN </h2>
+        @foreach($questions as $question)
+
+        <iframe width="560" height="315" src="{{$question->url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+         @endforeach
+
+
+
       </div>
-        <h2> {{$questions}} </h2>
+       @foreach($questions as $question)
+        <h2> {{$question->question}} </h2>
+        @endforeach
 
+        @foreach ($answers as $answer)
 
         <button type="button" name="button">
-          <p> RTA 1</p>
+          <p>{{$answer->answer}}</p>
         </button>
-        <button type="button" name="button">
-            <p> RTA 2</p>
-        </button>
-        <button type="button" name="button">
-            <p> RTA 3</p>
-        </button>
-        <button type="button" name="button">
-            <p> RTA 4</p>
-        </button>
+      @endforeach
 
     </div>
 
