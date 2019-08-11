@@ -9,4 +9,11 @@ class Question extends Model
     protected $fillable = [
         'question', 'image', 'url'
     ];
+
+    public function answer(){
+      return $this->hasMany("App\Answer", "question_id");
+
+    }
+
+
 }

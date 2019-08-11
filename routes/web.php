@@ -22,3 +22,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/play', 'QuestionController@quiz');
+
+Route::post('/play', function(){
+  return view('play');
+});
