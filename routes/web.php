@@ -28,3 +28,16 @@ Route::get('/play', 'QuestionController@quiz');
 Route::post('/play', function(){
   return view('play');
 });
+
+// COMENTO PARA NO ROMPER LO QUE TENIAMOS
+// Route::get('/addQuestion', function(){
+//   return view("addQuestion");
+// });
+//
+// Route::post('/addQuestion', 'QuestionController@addQuestion');
+//
+// Route::get('/addAnswer', function(){
+//   return view("addAnswer");
+// });
+//
+// Route::post('/addAnswer', 'QuestionController@addAnswer');
