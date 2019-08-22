@@ -1,13 +1,9 @@
 
-<!-- LO COMENTO PARA NO ROMPER LO QUE TENIAMOS
+<!-- LO COMENTO PARA NO ROMPER LO QUE TENIAMOS 
 
- <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+@extends ("layouts.master")
+
+@section("contenido")
 
 <form class="" action="/addQuestion" method="post">
   {{csrf_field()}}
@@ -31,5 +27,4 @@
   </div>
 </form>
 
-</body>
-</html> -->
+@endsection -->

@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+
+@extends ("layouts.master")
+
+@section("contenido")
 
 <form class="" action="/addAnswer" method="post">
   {{csrf_field()}}
@@ -32,5 +29,4 @@
 
 </form>
 
-</body>
-</html>
+@endsection
