@@ -1,7 +1,3 @@
-
-<!-- LO COMENTO PARA NO ROMPER LO QUE TENIAMOS
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -23,7 +19,10 @@
     <input type="" name="correct" value="">
   </div>
 
-
+  <div class="">
+    <label for=""> Esta respuesta corresponde a la pregunta Numero: </label>
+    <input type="" name="correct" value="{{question_id}}">
+  </div>
 
   <div class="">
     <input type="submit" name="" value="AGREGAR RESPUESTA">
@@ -35,4 +34,3 @@
 
 </body>
 </html>
- -->

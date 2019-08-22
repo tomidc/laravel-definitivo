@@ -23,7 +23,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/play', 'QuestionController@quiz');
+Route::get('/play/{id}', function($id){
+  $vac = compact("id", "question_id");
+return view('play', $vac);
+});
 
 Route::post('/play', function(){
   return view('play');

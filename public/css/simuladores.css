@@ -1,0 +1,181 @@
+/* las clases que existen hasta ahora son: container, main-header, nav1, nav2, izquierda, derecha, regis (para registro y login) */
+
+/* creo que es muy buena practica ir poniendo comentarios de los cambios */
+
+*{
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+  }
+
+body{
+  background-color: black;
+  /* background-image: url("/img/verde-01.png"); */
+
+  }
+/*
+.navbar {
+  background-color: black;
+  color: white;
+}
+
+.navbar-brand{
+  color: #35FF00;
+}
+
+.nav-link{
+  color: #35FF00;
+}
+
+.btn-link{
+  color: #35FF00;
+}
+
+.offset-md-4 {
+  margin: 0;
+}
+
+.card{
+  position: relative;
+display: flex;
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+background-clip: border-box;
+border: 1px solid rgba(0,0,0,.125);
+    border-top-color: rgba(0, 0, 0, 0.125);
+    border-right-color: rgba(0, 0, 0, 0.125);
+    border-bottom-color: rgba(0, 0, 0, 0.125);
+    border-left-color: rgba(0, 0, 0, 0.125);
+border-radius: .25rem;
+background-color: #1a1919;
+border-color: #35FF00;
+color: #35FF00;
+}
+
+
+
+.footer-img{
+  text-align: center;
+  margin-top: 5px;
+}
+
+.button-register{
+  background-color: #1a1919;
+  border-color: #35FF00;
+  color: #35FF00;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    border-color: #35FF00;
+  } */
+
+
+  .container{
+  color: white;
+  }
+
+  .register-bg{
+    background-image: url("/img/man.jpg");
+    background-size: cover;
+    height: cover;
+    height: 75vh;
+    width: 100vw;
+  }
+
+  .black-square{
+    
+    background-color: #00000078;
+    max-width: max-content;
+    max-height: max-content;
+    border-color: white;
+    text-align: center;
+  }
+
+  .card-header{
+    color: white;
+    border-color: white;
+  }
+
+  .placeholder-border{
+    color: white;
+    border-color: green;
+  }
+
+  .placeholder{
+    color: #fbfdfb;
+    background-color: #040404eb;
+    border: 1px solid white;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .nav-link{
+  color: white;
+  }
+
+  .navbar-brand{
+  color: white;
+  }
+
+  .button-register{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+
+  .login-bg{
+    background-image: url("/img/man.jpg");
+    background-size: cover;
+    height: cover;
+    height: 75vh;
+    width: 100vw;
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #0000004a;
+    border-color: #2176bd;
+}
+
+  .checkbox-button {
+
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+  }
+
+  .forget-pass{
+    color: white;
+  }
+
+  .button-reset{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+  }
+
+  .form-reset{
+
+  }
+
+
+.burguer{
+
+}
+.home-bg{
+  background-image: url("/img/lluvia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.resetPass-bg{
+  background-image: url("/img/man.jpg");
+  background-size: cover;
+  height: cover;
+  height: 75vh;
+  width: 100vw;
+}
