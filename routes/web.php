@@ -23,14 +23,16 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/play/{id}', function($id){
-  $vac = compact("id", "question_id");
-return view('play', $vac);
-});
+Route::get('/play/{id}', 'QuestionController@quiz');
 
-Route::post('/play', function(){
-  return view('play');
-});
+Route::post('/play/{id}', 'QuestionController@next');
+
+// Route::get('/reglas', function(){
+//   return view('reglas');
+// });
+//
+
+
 
 // COMENTO PARA NO ROMPER LO QUE TENIAMOS
 // Route::get('/addQuestion', function(){

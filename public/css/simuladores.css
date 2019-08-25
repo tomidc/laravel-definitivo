@@ -85,7 +85,7 @@ color: #35FF00;
   }
 
   .black-square{
-    
+
     background-color: #00000078;
     max-width: max-content;
     max-height: max-content;
@@ -178,4 +178,9 @@ color: #35FF00;
   height: cover;
   height: 75vh;
   width: 100vw;
+}
+
+.bg-question{
+  background-color: black;
+  color: white;
 }

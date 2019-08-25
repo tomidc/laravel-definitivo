@@ -13,8 +13,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    
 
-                    ¡LISTO/A PARA JUGAR!
+                    <a href="/play/1" class="button-register">¡LISTO/A PARA JUGAR!</a>
                 </div>
             </div>
         </div>

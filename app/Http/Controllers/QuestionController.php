@@ -5,21 +5,74 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Question;
 use App\Answer;
+use App\User;
 
-class QuestionController extends Controller
-{
+class QuestionController extends Controller {
+
+    public function quiz($id){
+
+      $question = Question::find($id);
+
+      $answers = Answer::where('question_id', $id)->get();
+
+        $vac = compact ("question", "answers");
+
+       return view("play", $vac);
+
+   }       
+
+    public function next($id){
+
+       $question = Question::find($id);
+
+          if ($question != null){
+             $answers = Answer::where('question_id', $id)->get();
+
+               $vac = compact ("question", "answers", "id");
+
+              return view("play", $vac);
+            } else {
+              return view ("home");
+            }
+          }
+
+// ASI MOSTRAMOS EL RECORD DE TABLA USER {{ Auth::user()->record }}
+
+
+//
+// public function correctAnswer(){
+//   if($_POST){
+//   $dato = $_POST;
+//
+//   $puntaje=0;
+//   foreach ($dato as $key => $value) {
+//   dd($dato);
+//     if ($key == 1) {
+//       $puntaje= $puntaje +1;
+//     }
+// dd($puntaje);
+// }
+//   }
+// }
+}
+
+
+
+
+
+
+
+    //        foreach ($questions as $question) {
     //
+    //]
 
-    public function quiz(){
-      $questions = Question:: all();
-    foreach ($questions as $question) {
-      $idQuestion= $question->id;
-    }
-     $answers = Answer::where('question_id', $idQuestion)->get();
+     // $image = Question:: where
 
-      return view('/play')-> with ('questions', $questions)-> with ('answers', $answers);
-
-    }
+    //  //
+    //
+    //
+    // }
+    // dd($idQuestion =0);
 
 
 //     COMENTO PARA NO ROMPER LO QUE TENIAMOS
@@ -60,4 +113,3 @@ class QuestionController extends Controller
 //
 //       return redirect('/addQuestion');
 //     }
-}
