@@ -6,11 +6,11 @@
       @guest
 
           <?= redirect('home'); ?>
-          
+
 
       @else
 
-      <form class="black-square" action="{{ $question->id+1 }}" method="POST">
+      <form class="black-square" action="{{ $question->id+1 }}" method="POST" id="formJs">
 
         @csrf
 
@@ -22,12 +22,14 @@
         <img width="100%" src="{{$question->url}}" alt="">
         <h2 class="bg-question">{{$question->question}} </h2>
         @foreach($answers as $key => $answer)
-        <input type="submit" name="{{$answer->correct}}" class="button-register col-md-4 buttonAnswer"  value="{{$answer->answer}}">
+        <button type="text" name="{{$answer->correct}}" class="button-register col-md-4" id="buttonAnswer"> {{$answer->answer}} </button>
+
+
 
 
 
 @endforeach
-
+    <p id="record">  {{ Auth::user()->record }} </p>
 </form>
 
 @endauth

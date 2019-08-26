@@ -13,63 +13,6 @@ body{
   /* background-image: url("/img/verde-01.png"); */
 
   }
-/*
-.navbar {
-  background-color: black;
-  color: white;
-}
-
-.navbar-brand{
-  color: #35FF00;
-}
-
-.nav-link{
-  color: #35FF00;
-}
-
-.btn-link{
-  color: #35FF00;
-}
-
-.offset-md-4 {
-  margin: 0;
-}
-
-.card{
-  position: relative;
-display: flex;
-flex-direction: column;
-min-width: 0;
-word-wrap: break-word;
-background-clip: border-box;
-border: 1px solid rgba(0,0,0,.125);
-    border-top-color: rgba(0, 0, 0, 0.125);
-    border-right-color: rgba(0, 0, 0, 0.125);
-    border-bottom-color: rgba(0, 0, 0, 0.125);
-    border-left-color: rgba(0, 0, 0, 0.125);
-border-radius: .25rem;
-background-color: #1a1919;
-border-color: #35FF00;
-color: #35FF00;
-}
-
-
-
-.footer-img{
-  text-align: center;
-  margin-top: 5px;
-}
-
-.button-register{
-  background-color: #1a1919;
-  border-color: #35FF00;
-  color: #35FF00;
-}
-
-.navbar-toggler:not(:disabled):not(.disabled) {
-    cursor: pointer;
-    border-color: #35FF00;
-  } */
 
 
   .container{
@@ -166,7 +109,7 @@ color: #35FF00;
 
 }
 .home-bg{
-  background-image: url("/img/lluvia.jpg");
+  /* background-image: url("/img/lluvia.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;

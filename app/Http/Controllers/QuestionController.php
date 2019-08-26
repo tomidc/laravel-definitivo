@@ -7,6 +7,15 @@ use App\Question;
 use App\Answer;
 use App\User;
 
+// public function recordCalculator($id)
+// $user = User::all()->toArray();
+// $record = $user[$id]['record'];
+//
+// // dd($user[0]['name']);
+
+
+
+
 class QuestionController extends Controller {
 
     public function quiz($id){
@@ -19,7 +28,7 @@ class QuestionController extends Controller {
 
        return view("play", $vac);
 
-   }       
+   }
 
     public function next($id){
 
