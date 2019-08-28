@@ -24,11 +24,11 @@
 
         <!-- <iframe width="560" height="315" src="{{$question->url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-        <img class="img-play col-md-8" src="{{$question->image}}" alt="">
+        <img class="img-play col-md-10" src="{{$question->image}}" alt="">
         <h2 class="bg-question">{{$question->question}} </h2>
         @foreach($answers as $key => $answer)
         <input name="puntaje"  id="puntaje" value=0 type="hidden">
-        <button type="submit" name="{{$answer->correct}}" class="button-register col-md-4" id="buttonAnswer"> {{$answer->answer}} </button>
+        <button type="submit" name="{{$answer->correct}}" class="buttonAnswers col-md-4" id="buttonAnswer"> {{$answer->answer}} </button>
 
 
 
@@ -37,6 +37,8 @@
 @endforeach
 
 </form>
+
+
 </div>
 </div>
 

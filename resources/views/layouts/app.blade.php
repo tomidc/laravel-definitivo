@@ -23,11 +23,11 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="css/simuladores.css">
-    
+
 </head>
-<body>
+<body  class="resetPass-bg">
     <div id="app">
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md bg-nav">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Los Simuladores
@@ -78,7 +78,7 @@
             </div>
         </nav>
 
-        <main class="py-4 resetPass-bg">
+        <main class="py-4">
             @yield('content')
         </main>
     </div>

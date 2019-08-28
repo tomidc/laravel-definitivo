@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/simuladores.css">
 
-        
+
 
         <!-- Styles -->
         <style>
@@ -92,6 +92,13 @@
               background-size: cover;
             } */
 
+            .welcome-bg{
+              background-image: url("/img/simu.jpg");
+              background-size: 100vw;
+              background-position: center center;
+              background-repeat: no-repeat;
+            }
+
             .full-height {
                 height: 100vh;
             }
@@ -137,6 +144,7 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 color: white;
+                background-color: black;
             }
 
             .m-b-md {
@@ -162,10 +170,10 @@
                 </div>
             @endif
 
-            <div class="content">
+            <div class="">
 
 
-                <img src="img/simu.jpg" width="100%" alt="">
+                <!-- <img src="img/simu.jpg" alt="" class="img-welcome"> -->
 
             </div>
         </div>
