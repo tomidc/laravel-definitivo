@@ -12,15 +12,15 @@
 
 <body>
   <div class="container">   <!--container-fluid abarca toda la pantalla y a este le falta img de fondo -->
-    <header class="main-header">  
+    <header class="main-header">
     <div class="">
       <img src="/img/logo.png" alt="logo" class="logo">
     </div>
 
-  @if(Auth::check()) 
+  @if(Auth::check())
   <nav class="nav" >    <!-- <div class="jumbotron text-center"> TE CENTRA EL TEXTO EN UNA LINEA Y LE AGREGAMOS LO DE NAV, nav y class nav no tienen nada -->
     <h1> Hola, <?=$_SESSION["nombre"];?>!</h1> <!-- PONDRIA EL H1 AFUERA DEL NAV -->
-    <ul class="izquierda"> 
+    <ul class="izquierda">
       <li><a href="index"> HOME </a></li>
       <li><a href="preguntas"> REGLAS</a></li>
       <li> <a href="logout"> LOGOUT</a></li>

@@ -7,7 +7,7 @@ window.onload = function(){
   // let puntaje = 0;
   let buttonsAnswer = document.querySelectorAll("#buttonAnswer");
   let form = document.getElementById("formJs");
-  
+
   buttonsAnswer.forEach((buttonAnswer) => {
     buttonAnswer.addEventListener('click', (event) => {
       let name = buttonAnswer.getAttribute('name');
@@ -25,9 +25,14 @@ window.onload = function(){
     });
   });
 
-  let gif1 = `<img src="/img/gif1.gif" alt="">`;
-  let gif2 = `<img src="/img/gif2.gif" alt="">`;
-  let gif3 = `<img src="/img/gif3.gif" alt="">`;
+
+
+
+
+
+  let gif1 = `<img src="/img/simu1.webp" alt="">`;
+  let gif2 = `<img src="/img/simu2.webp" alt="">`;
+  let gif3 = `<img src="/img/simu3.webp" alt="">`;
 
   let record = document.querySelector(".resultadoJuego");
   console.log(sessionStorage.puntaje)
@@ -40,8 +45,6 @@ window.onload = function(){
   } else {
     document.querySelector('#gif').innerHTML = gif3;
   }
-
-
 
 }
         //

@@ -5,7 +5,7 @@
 <div class="container home-bg">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card black-square">
+            <div class="card">
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,9 +13,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    
 
-                    <a href="/play/1" class="button-register">¡LISTO/A PARA JUGAR!</a>
+
+                    <a href="/play/1" class="buttonPlay">¡LISTO/A PARA JUGAR!</a>
                 </div>
             </div>
         </div>

@@ -10,8 +10,6 @@
 
 body{
   background-color: black;
-  /* background-image: url("/img/verde-01.png"); */
-
   }
 
 
@@ -20,15 +18,9 @@ body{
   }
 
   .register-bg{
-    background-image: url("/img/man.jpg");
-    background-size: cover;
-    height: cover;
-    height: 75vh;
-    width: 100vw;
   }
 
   .black-square{
-
     background-color: #00000078;
     max-width: max-content;
     max-height: max-content;
@@ -43,7 +35,7 @@ body{
 
   .placeholder-border{
     color: white;
-    border-color: green;
+    border-color: black;
   }
 
   .placeholder{
@@ -66,25 +58,23 @@ body{
     color: white;
     background-color: black;
     border: 2px solid white;
-}
+  }
 
+  .buttonPlay{
+    color: white;
+    width: 20%;
+  }
 
   .login-bg{
-    background-image: url("/img/man.jpg");
-    background-size: cover;
-    height: cover;
-    height: 75vh;
-    width: 100vw;
   }
 
   .btn-primary:hover {
     color: #fff;
     background-color: #0000004a;
     border-color: #2176bd;
-}
+  }
 
   .checkbox-button {
-
     margin: 0 auto;
     text-align: center;
     color: white;
@@ -101,29 +91,53 @@ body{
   }
 
   .form-reset{
-
   }
 
 
-.burguer{
+  .burguer{
+  }
 
-}
-.home-bg{
-  /* background-image: url("/img/lluvia.jpg"); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
 
-.resetPass-bg{
-  background-image: url("/img/man.jpg");
-  background-size: cover;
-  height: cover;
-  height: 75vh;
-  width: 100vw;
-}
+  .resetPass-bg{
+  background-image: url("/img/bg-horizontal.gif");
+  /* background-image: url("/img/man.jpg");*/
+   background-size: cover;
+   height: 100vh;
+   width: 100vw;
+   background-position: center center;
+   }
 
-.bg-question{
-  background-color: black;
-  color: white;
-}
+  .bg-question{
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: large;
+  }
+
+
+  .playSquare{
+    width: 80%;
+    height: 90%;
+    background-color: #00000078;
+    border-color: white;
+    text-align: center;
+    max-height: content;
+    }
+
+  .img-play{
+    margin-top: 2%;
+  }
+
+  .resultadoJuego{
+    font-size: large;
+    color: white;
+  }
+
+  #record{
+    font-size: large;
+    color: white;
+  }
+
+  .resultado{
+    color: white;
+  }

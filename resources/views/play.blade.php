@@ -10,7 +10,12 @@
 
       @else
 
-      <form class="black-square" action="{{ $question->id+1 }}" method="POST" id="formJs">
+      <div class="container playSquare">
+      <div class="row justify-content-center">
+
+
+
+      <form class="" action="{{ $question->id+1 }}" method="POST" id="formJs">
 
         @csrf
 
@@ -19,7 +24,7 @@
 
         <!-- <iframe width="560" height="315" src="{{$question->url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-        <img  src="{{$question->image}}" alt="">
+        <img class="img-play col-md-8" src="{{$question->image}}" alt="">
         <h2 class="bg-question">{{$question->question}} </h2>
         @foreach($answers as $key => $answer)
         <input name="puntaje"  id="puntaje" value=0 type="hidden">
@@ -30,8 +35,12 @@
 
 
 @endforeach
-    <p id="record">  {{ Auth::user()->record }} </p>
+
 </form>
+</div>
+</div>
+
+
 
 @endauth
 

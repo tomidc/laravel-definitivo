@@ -1,10 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+
+<div class="playSquare">
+
+
 <link rel="stylesheet" href="/css/simuladores.css">
 
-    
-    <h1> Tu resultado es: </h1>
+
+    <h2 class="resultado"> Tu resultado es: </h2>
     <p class="resultadoJuego"></p>
     <div>
 
@@ -14,6 +18,6 @@
     <div id="gif"></div>
 
     <a href="/play/1"> ¡Volver a Jugar! </a>
-
+</div>
 
 @endsection
