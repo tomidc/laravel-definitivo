@@ -19,10 +19,11 @@
 
         <!-- <iframe width="560" height="315" src="{{$question->url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-        <img width="100%" src="{{$question->url}}" alt="">
+        <img  src="{{$question->image}}" alt="">
         <h2 class="bg-question">{{$question->question}} </h2>
         @foreach($answers as $key => $answer)
-        <button type="text" name="{{$answer->correct}}" class="button-register col-md-4" id="buttonAnswer"> {{$answer->answer}} </button>
+        <input name="puntaje"  id="puntaje" value=0 type="hidden">
+        <button type="submit" name="{{$answer->correct}}" class="button-register col-md-4" id="buttonAnswer"> {{$answer->answer}} </button>
 
 
 

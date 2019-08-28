@@ -22,28 +22,23 @@ class QuestionController extends Controller {
 
       $question = Question::find($id);
 
-      $answers = Answer::where('question_id', $id)->get();
 
-        $vac = compact ("question", "answers");
 
-       return view("play", $vac);
+       if ($question != null){
+
+          $answers = Answer::where('question_id', $id)->get();
+
+         $vac = compact ("question", "answers");
+
+         return view("play", $vac);
+
+       } else {
+         
+         
+        return redirect('/resultado');
+       }
 
    }
-
-    public function next($id){
-
-       $question = Question::find($id);
-
-          if ($question != null){
-             $answers = Answer::where('question_id', $id)->get();
-
-               $vac = compact ("question", "answers", "id");
-
-              return view("play", $vac);
-            } else {
-              return view ("home");
-            }
-          }
 
 // ASI MOSTRAMOS EL RECORD DE TABLA USER {{ Auth::user()->record }}
 
