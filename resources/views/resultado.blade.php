@@ -2,22 +2,21 @@
 
 @section('content')
 
+
+
+
 <div class="playSquare">
 
 
 <link rel="stylesheet" href="/css/simuladores.css">
 
 
-    <h2 class="resultado"> Tu resultado es: </h2>
+    <h2 class="resultado"> TU RESULTADO ES </h2>
     <p class="resultadoJuego"></p>
-    <div>
-
-        <p id="record">  {{ Auth::user()->record }} </p>
-
-    </div>
+    
     <div id="gif"></div>
 
-    <a href="/play/1"> ¡Volver a Jugar! </a>
+    <a class="button-register" href="/play/1"> ¡Volver a Jugar! </a>
 </div>
 
 @endsection

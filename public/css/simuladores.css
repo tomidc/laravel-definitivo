@@ -114,6 +114,7 @@ body{
     border: 2px solid white;
     border-radius: 0.7rem;
   }
+  
 
   .buttonPlay{
     width: 20%;
@@ -197,15 +198,16 @@ body{
   /* background-image: url("/img/man.jpg");*/
    background-size: cover;
    background-repeat: no-repeat;
-   height: 100vh;
-   width: 100vw;
+   /* height: 100vh;
+   width: 100vw; */
    background-position: center center;
    }
 
    .bg-nav{
     background-color: black;
-    margin-top: 3%;
-    margin-bottom: 1%;
+    
+    /* margin-top: 3%;
+    margin-bottom: 1%; */
    }
 
   .bg-question{
@@ -214,12 +216,12 @@ body{
     width: 100vw;
     border-top-color: white;
     border-bottom-color: white;
-    margin-top: 3%;
+    margin-top: 1%;
     background-size: cover;
     font-size: medium;
     text-transform: uppercase;
-    padding: 2%;
-    margin-bottom: 3%;
+    padding: 0.5%;
+    margin-bottom: 1%;
     border-top-style: solid;
     border-bottom-style: solid;
     border-style: groove;
@@ -230,23 +232,27 @@ body{
     background-color: #00000078;
     border-color: white;
     text-align: center;
-    max-height: content;
+    /* max-height: content;
     max-width: 100%;
-    max-height: 100%;
-    padding: 3.5%;
+    max-height: 100%; */
+    /* padding: 3.5%; */
     }
 
+    #gif{
+      width:100%;
+    }
 
   .img-play{
-    width:650px;
+    width: 100%;
     padding:2px;
     border:8px solid black;
     background-color: #e6e6e6;
     border-radius: 0.7rem;
+   
   }
 
   .resultadoJuego{
-    font-size: large;
+    font-size: 4rem;
     color: white;
   }
 

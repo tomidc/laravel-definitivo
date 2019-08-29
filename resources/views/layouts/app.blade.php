@@ -28,7 +28,7 @@
 <body  class="resetPass-bg">
     <div id="app">
         <nav class="navbar navbar-expand-md bg-nav">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img width="20%" src="/img/logo.png" alt="">
                 </a>

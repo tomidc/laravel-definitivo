@@ -30,20 +30,23 @@ window.onload = function(){
 
 
 
-  let gif1 = `<img src="/img/simu1.webp" alt="">`;
-  let gif2 = `<img src="/img/simu2.webp" alt="">`;
-  let gif3 = `<img src="/img/simu3.webp" alt="">`;
+  let gif1 = `<img class="col-lg-5 col-md-10 " src="/img/simu1.webp" alt="">`;
+  let gif2 = `<img class="col-lg-5 col-md-10" src="/img/simu2.webp" alt="">`;
+  let gif3 = `<img class="col-lg-5 col-md-10" src="/img/simu3.webp" alt="">`;
 
   let record = document.querySelector(".resultadoJuego");
   console.log(sessionStorage.puntaje)
   record.innerText = sessionStorage.puntaje;
 
-  if(sessionStorage.puntaje < 1) {
+  if(sessionStorage.puntaje < 4) {
     document.querySelector('#gif').innerHTML = gif1;
-  } else if (sessionStorage.puntaje < 3) {
+    sessionStorage.clear();
+  } else if (sessionStorage.puntaje < 9) {
     document.querySelector('#gif').innerHTML = gif2;
+    sessionStorage.clear();
   } else {
     document.querySelector('#gif').innerHTML = gif3;
+    sessionStorage.clear();
   }
 
 
