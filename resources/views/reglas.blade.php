@@ -3,46 +3,39 @@
 @section('content')
 
 
-<html dir="ltr" lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/simuladores.css">
-  <title> Los Simuladores </title>
-</head>
-
-<body class="container-body">
-  <div>
-    <header class="main-header">
+<div class="container reglasSquare">
+    <div class="row justify-content-center">
 
 
+              <h2 class="reglasTittle"> REGLAS </h2>
 
-  </header>
-  <main>
+              <br>
 
-    <section class="body-section">
+            <div class="">
+              <p class="reglasText"> Los Simuladores están buscando un/a nuevo/a integrante para sumarse al equipo. Pero primero quieren saber cuánto los conocés.
+              </p>
 
-        <h2> REGLAS: </h2>
-
-        <div class="reglas-juego black-square">   <!-- deberia ser un div class row y las reglas en vez de li deberian ser div class col para hacerla responsive -->
-                                      <!-- y serian col-xs-12 cole-sm-6 col-md-4 col-lg-3 -->
-          <ol>
-            <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
-            <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
-            <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
-
-          </ol>
-        <br>
+              <p class="reglasLine"></p>
 
 
-      </div>
-      </section>
-    </main>
+                <p class="reglasText"> Para comenzar con este interrogatorio, primero vas a tener que registrarte.
+                </p>
+              <p class="reglasLine"></p>
+
+                <p class="reglasText"> Una vez que ingreses, encontrarás una pregunta con 4 respuestas, pero ¡CUIDADO! sólo 1 es correcta.
+                </p>
+              <p class="reglasLine"></p>
+                <p class="reglasText"> Al finalizar el cuestionario, quizás te rías, llores, asustes o quién sabe...
+                </p>
+                
+
+
+
+
     </div>
+</div>
+</div>
 
-
-</body>
-</html>
 
 
 @endsection

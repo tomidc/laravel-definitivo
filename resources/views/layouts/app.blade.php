@@ -30,7 +30,7 @@
         <nav class="navbar navbar-expand-md bg-nav">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Los Simuladores
+                    <img width="20%" src="/img/logo.png" alt="">
                 </a>
                 <button class="navbar-toggler navbar-dark burguer" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -49,10 +49,12 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
+
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
+
                             @endif
                         @else
                             <li class="nav-item dropdown">

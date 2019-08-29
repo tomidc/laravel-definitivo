@@ -165,6 +165,8 @@
 
                         @if (Route::has('register'))
                             <a id="welcome-h1" href="{{ route('register') }}">Register</a>
+                            <a href="reglas"> {{ __('Reglas') }} </a>
+
                         @endif
                     @endauth
                 </div>

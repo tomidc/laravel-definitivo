@@ -29,6 +29,10 @@ Route::post('/play/{id}', 'QuestionController@quiz');
 
 Route::get('/resultado', 'AnswerController@correctAnswer');
 
+Route::get('/reglas', function(){
+  return view('reglas');
+});
+
 // Route::get('/reglas', function(){
 //   return view('reglas');
 // });
